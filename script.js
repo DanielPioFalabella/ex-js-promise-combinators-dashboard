@@ -1,5 +1,9 @@
 const BASE_URL = "http://localhost:3333"
 
+const danielCopia = structuredClone(daniel);
+danielCopia.laptop.year = 2025;
+console.log(danielCopia.laptop.year - daniel.laptop.year);
+
 async function getDashboardData(query) {
     try {
         console.log(`sto caricando la query ${query}`)
